@@ -69,9 +69,9 @@ def calculations(data):
 def main():
     user_data = get_user_input()
     calcs = calculations(user_data)
-    print('Месячная выплата по кредиту {:,.2f}'.format(calcs['interval_payment']))
-    print('Общий объём начисленных процентов {:,.0f}'.format(calcs['interest_paid']))
-    print('Общая сумма выплаты {:,.0f}'.format(calcs['total_paid']))
+    print('Месячная выплата по кредиту: {:,.2f}'.format(calcs['interval_payment']))
+    print('Общий объём начисленных процентов: {:,.0f}'.format(calcs['interest_paid']))
+    print('Общая сумма выплаты: {:,.0f}'.format(calcs['total_paid']))
 
 
 if __name__ == '__main__':
