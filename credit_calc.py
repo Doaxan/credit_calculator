@@ -41,6 +41,10 @@ def get_user_input():
     if not set(check_items.keys()).issubset(user_input.keys()):
         raise Exception('Incorrect keys user inputted')
 
+    # Check all values > 0
+    if any(v <= 0 for v in user_input.values()):
+        raise Exception('Values must not be less or equal 0')
+
     return user_input
 
 
